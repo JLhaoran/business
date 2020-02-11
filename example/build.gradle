@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "fastec.com.rrcc.latte"
+        applicationId "com.rrcc.example"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -22,4 +22,5 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':latte-compiler')
     implementation project(':latte-ec')
+    compile project(path: ':latte-core')
 }
